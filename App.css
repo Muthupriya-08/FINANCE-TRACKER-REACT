@@ -1,0 +1,335 @@
+/* App.css */
+
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #fff);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Container styling */
+  .container {
+    max-width: 600px;
+    background: #fff;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Header styles */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #00796b;
+  }
+  
+  /* Quote styling */
+  .quote {
+    font-style: italic;
+    text-align: center;
+    color: #555;
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 4px solid #00796b;
+  }
+  
+  /* Summary styling */
+  .summary {
+    text-align: center;
+    background: #e0f2f1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+  }
+  
+  .summary p {
+    margin: 5px 0;
+    font-weight: 500;
+  }
+  
+  /* Form styling */
+  form {
+    margin-bottom: 30px;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.2s ease;
+  }
+  
+  input:focus, select:focus {
+    border-color: #00796b;
+    outline: none;
+  }
+  
+  button {
+    background-color: #00796b;
+    border: none;
+    padding: 12px 20px;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #005b4f;
+  }
+  
+  /* Transactions list styling */
+  .transaction-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .transaction-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #00796b;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+  
+  .transaction-list li:nth-child(odd) {
+    background: #f1f1f1;
+  }
+  
+  .transaction-list li:hover {
+    background: #e0f7fa;
+  }
+  
+  .transaction-list li span {
+    flex: 1;
+  }
+  
+  /* Delete button styling */
+  .delete-btn {
+    background-color: #e53935;
+    border: none;
+    padding: 8px 12px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ab000d;
+  }
+  
+  /* No transactions styling */
+  .no-transactions {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+      margin: 20px;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+  }
+    /* Edit button styling */
+.edit-btn {
+    background-color: #4caf50;
+    border: none;
+    padding: 8px 12px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 5px;
+  }
+  
+  .edit-btn:hover {
+    background-color: #388e3c;
+  }
+  /* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f7fc;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container */
+  .container {
+    background-color: #fff;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #5c6bc0;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  blockquote {
+    font-style: italic;
+    color: #5c6bc0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .summary {
+    background-color: #f1f3f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .summary p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  button {
+    background-color: #5c6bc0;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #3f51b5;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  input:focus, select:focus {
+    border-color: #5c6bc0;
+    outline: none;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  .transaction-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .transaction-list li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .transaction-list li span {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .transaction-list .edit-btn, .transaction-list .delete-btn {
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .transaction-list .edit-btn:hover, .transaction-list .delete-btn:hover {
+    background-color: #d15c3d;
+  }
+  
+  .no-transactions {
+    font-size: 1rem;
+    color: #888;
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    .container {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+    }
+  }
+  
