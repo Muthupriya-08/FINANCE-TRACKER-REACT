@@ -1,5 +1,9 @@
 
 🌟 Finance Tracker 💸
+
+
+
+
 🚀 A simple, intuitive, and efficient finance tracking app to manage your income & expenses!
 Keep an eye on your spending, analyze financial trends, and make smarter money decisions!
 
